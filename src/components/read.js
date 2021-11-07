@@ -5,9 +5,9 @@ class Read extends Component {
         mymovies: []
     };
     componentDidMount() {
-        axios.get('https://jsonblob.com/api/jsonblob/894944504570986496')
+        axios.get('https://localhost:4000/api/movies')
             .then((response) => {
-                this.setState({ mymovies: response.data.Search })
+                this.setState({ mymovies: response.data.movies })
             })
             .catch((error) => { console.log(error) }
             );
