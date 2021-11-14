@@ -6,14 +6,14 @@ class MovieItem extends Component {
         return (
             <div>
                 <Card>
-                    <Card.Header><h4> {this.props.movie.Title} </h4></Card.Header>
+                    <Card.Header><h4> {this.props.movie.title} </h4></Card.Header>
                     <Card.Body>
                         <blockquote >
-                            <img src={this.props.movie.Title}></img>
+                            <img src={this.props.movie.poster}></img>
 
 
                             <footer>
-                                <p>{this.props.movie.Year}</p>
+                                <p>{this.props.movie.year}</p>
                             </footer>
                         </blockquote>
                     </Card.Body>
