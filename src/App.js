@@ -27,7 +27,8 @@ class App extends Component {
          
          <Switch>
            <Route Path='/read'><Read></Read></Route>
-           {<Route Path='/create'><Create></Create></Route> }
+           <Route Path='/create'><Create></Create></Route>
+            <Route Path='/edit/:id' Component = {Edit}></Route>
          </Switch> 
        </div>
      </Router>
