@@ -4,7 +4,7 @@ import axios from 'axios';
 class Create extends React.Component {
     constructor() {
         super();
-
+          //Constructor variables are created and binded to this.on variable to api variable names
         this.onSubmit = this.onSubmit.bind(this);
         this.onChangeTitle = this.onChangeTitle.bind(this);
         this.onChangeYear = this.onChangeYear.bind(this);
@@ -16,21 +16,25 @@ class Create extends React.Component {
             Poster: ''
         }
     }
+    //adds title of movie
     onChangeTitle(e) {
         this.setState({
             Title: e.target.value
         });
     }
+    //adds year of release
     onChangeYear(e) {
         this.setState({
             Year: e.target.value
         });
     }
+    //adds poster url
     onChangePoster(e) {
         this.setState({
             Year: e.target.value
         });
     }
+    //Saves changes added to database
     onSubmit(e) {
         e.prevntDefault();
         alert("Movie: " + this.state.Title 
